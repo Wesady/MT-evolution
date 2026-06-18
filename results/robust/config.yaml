@@ -1,0 +1,41 @@
+base_measure_params:
+  alpha: 1
+  beta: 1
+beta_binomial_precision_params:
+  prior:
+    rate: 0.001
+    shape: 1.0
+  proposal:
+    precision: 0.01
+  value: 1000
+concentration:
+  prior:
+    rate: 0.001
+    shape: 1.0
+  value: 1.0
+density: pyclone_beta_binomial
+init_method: disconnected
+num_iters: 10000
+samples:
+  1_h_versionB:
+    error_rate: 0.001
+    mutations_file: results/robust/yaml/1_h_versionB.yaml
+    tumour_content:
+      value: 1.0
+  2_ad_versionB:
+    error_rate: 0.001
+    mutations_file: results/robust/yaml/2_ad_versionB.yaml
+    tumour_content:
+      value: 1.0
+  3_ec_versionB:
+    error_rate: 0.001
+    mutations_file: results/robust/yaml/3_ec_versionB.yaml
+    tumour_content:
+      value: 1.0
+  4_lc_versionB:
+    error_rate: 0.001
+    mutations_file: results/robust/yaml/4_lc_versionB.yaml
+    tumour_content:
+      value: 1.0
+trace_dir: trace
+working_dir: /mnt/2026/results/robust
